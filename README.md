@@ -15,14 +15,6 @@ This is a Chrome extension that enhances your GitHub experience by adding an 'Op
 3. Enable Developer Mode by clicking the toggle switch next to **Developer mode**.
 4. Click the **Load unpacked** button and select the extension directory.
 
-## Permissions
-
-This extension requires the following permissions:
-
-- `tabs`: To interact with the browser's tab system.
-- `activeTab`: To access and modify the current active tab.
-- `storage`: To interact with the browser's storage.
-
 ## Version
 
 This is version 1.0 of the extension.
