@@ -1,8 +1,12 @@
 // window.addEventListener("load", function () {
 //document.addEventListener("DOMContentLoaded", function() {
 window.onload = function () {
+  delay(3000).then(() => {
+    addIcons();
+  });
+};
+function addIcons() {
   curent_window_link = window.location.href;
-  delay(3000);
   if (curent_window_link.slice(-6) == ".ipynb") {
     //this is a notebook link
     colab_link = getColabUrl_fromgitUrl(curent_window_link);
@@ -26,17 +30,19 @@ window.onload = function () {
       }
     });
   }
-};
+}
 
 img1_link = "https://colab.research.google.com/assets/colab-badge.svg";
 img2_link =
   "https://ssl.gstatic.com/colaboratory-static/common/3ff74a4cb562df03c356629330761cf9/img/favicon.ico";
-img3_link = "";
+img3_link =
+  "https://raw.githubusercontent.com/seyf1elislam/Colab_Launcher_for_GitHub_ChromExtension/main/img/logo1.png";
+
 function getColabIcon(colab_link, type = 1) {
   if (type == 1) {
     return `<a target="_blank" href="${colab_link}"><img src="${img1_link}" alt="Open In Colab" /></a>`;
   } else {
-    return `<a target="_blank" href="${colab_link}"><img src="${img2_link}" alt="Open In Colab" width="20" height="20"/></a>`;
+    return `<a target="_blank" href="${colab_link}"><img src="${img3_link}" alt="Open In Colab" width="20" height="20"/></a>`;
   }
 }
 function delay(ms) {
