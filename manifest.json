@@ -1,6 +1,6 @@
 {
-    "name": "add Open in Colab Button  to Github ",
-    "description": "add Open in Colab Button  to Github ",
+    "name": "Colab Launcher for GitHub",
+    "description": "This extension enhances your GitHub experience by adding an 'Open in Colab' button to repositories containing Jupyter notebooks (.ipynb files). This allows you to quickly open and run these notebooks in Google Colab directly from GitHub.",
     "manifest_version": 3,
     "version": "1.0",
     "permissions": [
@@ -9,7 +9,7 @@
         "storage"
     ],
     "action": {
-        "default_icon": "logo.png",
+        "default_icon": "img/logo1.png",
         "onClicked": "js/onclick.js"
     },
     "content_scripts": [{
