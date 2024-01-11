@@ -1,0 +1,20 @@
+{
+    "name": "add Open in Colab Button  to Github ",
+    "description": "add Open in Colab Button  to Github ",
+    "manifest_version": 3,
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_icon": "logo.png",
+        "onClicked": "js/onclick.js"
+    },
+    "content_scripts": [{
+        "matches": ["https://github.com/*"],
+        "js": ["js/github.js"]
+    }]
+
+}
