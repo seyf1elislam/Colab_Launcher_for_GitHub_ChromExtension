@@ -20,7 +20,7 @@ This is a Chrome extension that enhances your GitHub experience by adding an 'Op
 This is version 1.0 of the extension.
 
 ## Examples :
-once you install the extension ,its will adds buttons on each notebook link
+Once you install the extension, it will add buttons to each notebook link.
 |_____| 
 |--|
 | ![image](https://github.com/seyf1elislam/Colab_Launcher_for_GitHub_ChromExtension/assets/40665383/60a95556-4710-4f61-8706-49776068ad1a) |
