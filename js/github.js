@@ -19,8 +19,8 @@ function addIcons() {
     anchors = document.querySelectorAll("a");
     anchors = Array.from(anchors).filter((a) => a.href.endsWith(".ipynb"));
     anchors.forEach((a) => {
-      colab_link = getColabUrl_fromgitUrl(curent_window_link);
-
+      anchor_link = a.href;
+      colab_link = getColabUrl_fromgitUrl(anchor_link);
       //this so make it apreare only for the files list
       if (a.parentElement.className == "react-directory-truncate") {
         a.parentElement.parentElement.parentElement.parentElement.innerHTML +=
@@ -48,8 +48,8 @@ function getColabIcon(colab_link, type = 1) {
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
-function getColabUrl_fromgitUrl(curent_window_link) {
-  colab_link = curent_window_link.replace(
+function getColabUrl_fromgitUrl(link) {
+  colab_link = link.replace(
     "https://github.com/",
     "https://colab.research.google.com/github/"
   );
