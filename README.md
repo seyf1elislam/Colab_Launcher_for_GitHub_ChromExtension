@@ -18,3 +18,12 @@ This is a Chrome extension that enhances your GitHub experience by adding an 'Op
 ## Version
 
 This is version 1.0 of the extension.
+
+## Examples :
+Once you install the extension, it will add buttons to each notebook link.
+|_____| 
+|--|
+| ![image](https://github.com/seyf1elislam/Colab_Launcher_for_GitHub_ChromExtension/assets/40665383/60a95556-4710-4f61-8706-49776068ad1a) |
+||
+|![image](https://github.com/seyf1elislam/Colab_Launcher_for_GitHub_ChromExtension/assets/40665383/58f251d4-7271-4a01-a5a1-08dd41c5b4b8) |
+
